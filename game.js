@@ -1,4 +1,4 @@
-if (localStorage.getItem("balatroPassword") != 1; || window.prompt('password') != 'donotgivetogrant') {
+if (localStorage.getItem("balatroPassword") != 1 || window.prompt('password') != 'donotgivetogrant') {
       window.history.replaceState({}, '', 'about:blank');
       window.location.replace('about:blank');
 } else {
@@ -306,3 +306,4 @@ Module.expectedDataFileDownloads++;
 
 
 })();
+
