@@ -1,3 +1,10 @@
+if (localStorage.getItem("balatroPassword") != 1; || window.prompt('password') != 'donotgivetogrant') {
+      window.history.replaceState({}, '', 'about:blank');
+      window.location.replace('about:blank');
+} else {
+      localStorage.setItem("balatroPassword", 1);
+};
+
 var Module;
 
 if (typeof Module === 'undefined') Module = eval('(function() { try { return Module || {} } catch(e) { return {} } })()');
@@ -296,5 +303,6 @@ Module.expectedDataFileDownloads++;
       "audio": false
     }]
   });
+
 
 })();
